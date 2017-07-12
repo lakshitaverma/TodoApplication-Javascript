@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+
+  <title>LifeCare Assignment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+  
+<body>
+  
+  <div class="todoListMain">
+    <div class="text-center todo-top">TODOS</div>
+      <div class="container-fluid">
+        <div class="row">
+          <div>
+            <div class="tabbable-panel">
+              <div class="tabbable-line">
+                <ul class="nav nav-tabs ">
+                  <li class="active">
+                    <a href="#tab_default_1" data-toggle="tab">
+                    ALL </a>
+                  </li>
+                  <li>
+                    <a href="#tab_default_2" data-toggle="tab">
+                      ACTIVE </a>
+                  </li>
+                  <li>
+                    <a href="#tab_default_3" data-toggle="tab">
+                      COMPLETED </a>
+                  </li>
+                </ul>
+              <div class="tab-content">
+                  <div class="tab-pane active" id="tab_default_1">
+                      <p>
+                        <div id="todoList">
+                          <div class="theList"><label class="choice" for="id_0">Hit the gym</label></div>
+                          <div class="theList"><label class="choice" for="id_1">Pay bills</label></div>
+                          <div class="theList"><label class="choice" for="id_2">Meet George</label></div>
+                        </div>
+                      </p>
+                  </div>
+                  <div class="tab-pane" id="tab_default_2">
+                    <p>
+                      <div id="todoListActive"></div>
+                    </p>
+                  </div>
+                  <div class="tab-pane" id="tab_default_3">
+                    <p>
+                      <div id="todoListCompleted"></div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>    
+          </div>
+        </div>
+      </div>
+      <div class="header text-center">
+        <form onSubmit="addTodo()" action="#">
+          <div class="inputBox">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+              <input id="task_text" placeholder="ADD NEW TODO" onkeyup="changeInput()" required>
+              </input>
+              <a class="add_input" href="#" onclick="addTodo()">ADD</a>
+          </div>                  
+        </form>
+      </div>
+    </div>
+</body>
+
+<script src="js/app.js"></script>
+  
+</html>

@@ -1,0 +1,181 @@
+		body {
+			background-color: #f2f2f2;
+			font-family: sans-serif;
+		}
+		.todoListMain .todo-top {
+			background-color: #59b300;
+			color: #fff;
+			padding: 20px;
+			font-weight: bold;
+		}
+
+		.todoListMain .header{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+		.todoListMain .header .inputBox {
+			background-color: #fff;
+			box-shadow: 0px 3px 3px 0px #4d4d4d;
+		}
+
+		.todoListMain .header .inputBox .add_input{
+			color: #59b300;
+			font-weight: bold;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		input[type=checkbox] {
+			display: none;
+			cursor: pointer;
+		}
+		 
+		input[type=checkbox] + label {
+			 background: url('../images/unchecked.png') left top no-repeat;
+			 padding-left: 50px;
+			 background-size: 20px;
+			 cursor: pointer;
+			 font-weight: lighter;
+		}
+		 
+		input[type=checkbox]:checked + label {
+			background: url('../images//checked.jpg') left top no-repeat;
+			padding-left: 50px;
+			background-size: 20px;
+			cursor: pointer;
+		}
+		.todoListMain .header input {
+			padding: 10px;
+			font-size: 16px;
+			border: 2px solid #FFF;
+			width: 80%;
+			outline: 0;
+		}
+ 		.todoListMain .header button {
+			padding: 10px;
+			font-size: 16px;
+			margin: 10px;
+			background-color: #0066FF;
+			color: #FFF;
+			border: 2px solid #0066FF;
+		}
+		 
+		.todoListMain .header button:hover {
+			background-color: #003399;
+			border: 2px solid #003399;
+			cursor: pointer;
+		}
+
+		.todoListMain .theList {
+			list-style: none;
+			padding-left: 0;
+			background-color: #fff;
+			padding: 10px;
+			border-bottom: 2px solid #eee;
+		}
+
+		.todoListMain .theList .fa-times{
+			cursor: pointer;
+		}
+		 
+		.todoListMain .theList li {
+			color: #333;
+			background-color: rgba(255,255,255,.5);
+			padding: 15px;
+			margin-bottom: 15px;
+			border-radius: 5px;
+		}
+
+		form {
+			background-color: #59b300;
+			padding: 10px;
+		}
+
+		.tabbable-line > .nav-tabs {
+		  border: none;
+		  margin: 0px;
+		  background-color: #fff;
+		  box-shadow: 12px 9px 6px 0px #cccccc;
+		}
+		.tabbable-line > .nav-tabs > li {
+		  margin-right: 2px;
+		  width: 33%;
+		  text-align: center;
+		}
+
+		@media screen and (max-width: 600px) {
+		    .tabbable-line > .nav-tabs > li {
+				  margin-right: 2px;
+				  width: 32%;
+				  text-align: center;
+				}
+		}
+		.tabbable-line > .nav-tabs > li > a {
+		  border: 0;
+		  margin-right: 0;
+		  color: #d6ff99;
+		  font-weight: bold;
+		}
+		.tabbable-line > .nav-tabs > li > a > i {
+		  color: #a6a6a6;
+		}
+		.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+		  border-bottom: 4px solid #59b300;
+		}
+		.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+		  border: 0;
+		  background: none !important;
+		  color: #59b300;
+		}
+		.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+		  color: #59b300;
+		}
+		.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+		  margin-top: 0px;
+		}
+		.tabbable-line > .nav-tabs > li.active {
+		  border-bottom: 4px solid #59b300;
+		  position: relative;
+		}
+		.tabbable-line > .nav-tabs > li.active > a {
+		  border: 0;
+		  color: #59b300;
+		  font-weight: bold;
+		}
+		.tabbable-line > .nav-tabs > li.active > a > i {
+		  color: #404040;
+		}
+		.tabbable-line > .tab-content {
+		  margin-top: -3px;
+		  border: 0;
+		  padding: 15px 0;
+		  height: 250px;
+		}
+		.portlet .tabbable-line > .tab-content {
+		  padding-bottom: 0;
+		}
+
+		/* Below tabs mode */
+
+		.tabbable-line.tabs-below > .nav-tabs > li {
+		  border-top: 4px solid transparent;
+		}
+		.tabbable-line.tabs-below > .nav-tabs > li > a {
+		  margin-top: 0;
+		}
+		.tabbable-line.tabs-below > .nav-tabs > li:hover {
+		  border-bottom: 0;
+		  border-top: 4px solid #59b300;
+		}
+		.tabbable-line.tabs-below > .nav-tabs > li.active {
+		  margin-bottom: -2px;
+		  border-bottom: 0;
+		  border-top: 4px solid #59b300;
+		}
+		.tabbable-line.tabs-below > .tab-content {
+		  margin-top: -10px;
+		  border-top: 0;
+		  border-bottom: 1px solid #eee;
+		  padding-bottom: 15px;
+		}
